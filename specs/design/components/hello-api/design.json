@@ -1,0 +1,12 @@
+{
+  "name": "hello-api",
+  "type": "service",
+  "version": "0.1.0",
+  "language": "Go",
+  "buildpack": "docker",
+  "appPath": "hello-api",
+  "entrypoint": "deployment/service",
+  "exposure": "internet",
+  "dependencies": [],
+  "description": "Minimal, stateless HTTP API that returns a friendly greeting (optionally personalized via a name query parameter) and exposes a health check for liveness probes. Runs on port 9090 with net/http. Owns no database and has no dependencies on other components or external systems; does not implement authentication, user management, or any persistent storage."
+}
